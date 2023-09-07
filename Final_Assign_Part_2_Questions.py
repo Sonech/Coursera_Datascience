@@ -159,7 +159,8 @@ def update_output_container(selected_statistics, input_year):
         Y_chart4 = dcc.Graph(
             figure=px.pie(exp_data,
                 values = 'Advertising_Expenditure', 
-                names='Vehicle_Type'))
+                names='Vehicle_Type',
+                title='Total Advertisement Expenditure'))
 
 #TASK 2.6: Returning the graphs for displaying Yearly data
         return [
